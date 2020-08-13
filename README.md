@@ -33,3 +33,10 @@ is used for collapsable sections (Accordions)
 
 To read and convert the csv in required Array format
 
+### 'npm i react-toastify'
+
+used to show the toast when user updated the feature image
+
+### 'npm i react-dropzone-uploader'
+
+Used for Dropzone for images
