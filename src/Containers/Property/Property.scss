@@ -1,0 +1,21 @@
+.propert-main {
+  margin: 15px auto;
+  display: flex;
+}
+.left-side-panel {
+  width: "20%";
+  padding: 10px;
+  border-right: 2px solid grey;
+  & img {
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.right-side-panel {
+  margin-left: 30px;
+  width: 100%;
+}
+.f_photo {
+  width: 70px;
+  height: 70px;
+}

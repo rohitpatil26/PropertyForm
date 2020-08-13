@@ -1,0 +1,115 @@
+@import './variables';
+
+// PADDINGS WITH LIST
+@mixin padding($values...) {
+  @each $var in $values {
+    padding: #{$var};
+  }
+}
+
+// MARGINS WITH LIST
+@mixin margin($values...) {
+  @each $var in $values {
+    margin: #{$var};
+  }
+}
+
+@mixin border($property, $width, $style, $color, $radius) {
+  @if ($property == $direction-top) {
+    border-top: $base-border-width * $width $style $color;
+    border-radius: $base-border-radius * $radius;
+  } @else if($property == $direction-right) {
+    border-right: $base-border-width * $width $style $color;
+    border-radius: $base-border-radius * $radius;
+  } @else if($property == $direction-bottom) {
+    border-bottom: $base-border-width * $width $style $color;
+    border-radius: $base-border-radius * $radius;
+  } @else if($property == $direction-left) {
+    border-left: $base-border-width * $width $style $color;
+    border-radius: $base-border-radius * $radius;
+  } @else {
+    border: $base-border-width * $width $style $color;
+    border-radius: $base-border-radius * $radius;
+  }
+}
+
+// BUTTON
+@mixin button-custom($color, $bg-color, $very-light-gray, $hover-darkness) {
+  color: $color !important;
+  background-color: $bg-color !important;
+  border-color: $very-light-gray !important;
+  &:hover {
+    background-color: darken($bg-color, $base-bg-hover-dark-pct * $hover-darkness) !important;
+    border-color: darken($very-light-gray, $base-border-hover-dark-pct * $hover-darkness) !important;
+    transition: all 0.3s ease !important;
+  }
+}
+
+// TABLE
+@mixin table-custom($table-text-color, $table-bg-color, $table-header-bg-color, $header-font-size, $column-font-size, $head-col-padding) {
+  color: $table-text-color;
+  background-color: $table-bg-color;
+  border: 0.1 * $base-border-width solid $listing-entities-table-border-color;
+
+  thead {
+    background-color: $table-header-bg-color;
+    font-size: $header-font-size;
+  }
+  th {
+    font-size: $header-font-size;
+  }
+  td {
+    font-size: $column-font-size;
+  }
+  tbody tr:nth-of-type(even) {
+    background-color: $table-header-bg-color;
+  }
+  tbody tr:nth-of-type(odd) {
+    background-color: $table-bg-color;
+  }
+  tbody tr:nth-of-type(even):hover {
+    background-color: $listing-entities-table-border-color;
+  }
+  tbody tr:nth-of-type(odd):hover {
+    background-color: $listing-entities-table-border-color;
+  }
+}
+
+//font-color-opacity
+@mixin font-color-opacity($opacity, $fontcolor) {
+  opacity: $opacity;
+  color: $fontcolor;
+}
+
+@mixin icon-background($url) {
+  background-image: url($url);
+  background-position: center;
+  height: 15px;
+  width: 15px;
+  background-repeat: no-repeat;
+  &:before {
+    content: '';
+  }
+}
+
+@mixin link {
+  color: #007bff;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin apply-font($font-family, $font-size, $line-height, $weight) {
+  font-family: $font-family, sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}

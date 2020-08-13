@@ -1,0 +1,128 @@
+/**
+ * All font-sizes, paddings, margins variables values are in rem
+ * All colors are of hex type exluding the colors used for opacity with use of short-hands
+ * Fonts and directions variables are of string
+ */
+
+// bg-colors
+$background_color_1: #ff8109;
+$background_color_2: #fff;
+$background_color_3: #f2f6ff;
+$border-color-sub-header: #2C86CC;
+$header-bg-color: transparent linear-gradient(90deg, #032559 0%, #10427B 100%) 0% 0% no-repeat padding-box;
+$add-btn-bg-color: #438000bf;
+$add-btn-hover-bg-color: #438000bf;
+$primary-btn-bg-color: transparent linear-gradient(131deg, #034e9d 0%, #0064cd 100%) 0% 0% no-repeat padding-box;
+
+//font-colors
+$header-font-color: #fff;
+$add-btn-text-color: #ffffff;
+$global-font-color: #1b2a2e;
+$color_1: #d1d0e2;
+$color_2: #ffffff;
+$color_3: #212121;
+$color_4: #636363;
+$color_5: #4d4f5c;
+$red: #ff0000;
+
+// Execution status
+$PASSED: #4fc281;
+$FAILED: #ffa550;
+$DEFECT: #eb4b3c;
+$NOTEXECUTED: #c6cdd1;
+$NA: #00000091;
+
+//priority-severity-colors
+$CRITICAL: #eb4b3c;
+$HIGH: #ffa550;
+$MEDIUM: #3fa2f0;
+$LOW: #4fc281;
+
+//background-colors
+$body-background-color: #fafbfd;
+
+// TABLE COLORS
+$listing-entities-table-text-color: #ffffff;
+$listing-entities-table-bg-color: #ffffff;
+$listing-entities-header-bg-color: #fafafd;
+$listing-entities-table-border-color: #e8e8e8;
+$listing-entities-table-striped-color: #fafafd;
+// BASE VARIABLES
+$base-padding: 1rem;
+$base-margin: 1rem;
+$base-font-size: 14px;
+$base-font-weight: 100;
+$base-border-radius: 1rem;
+$base-border-width: 1rem;
+$base-bg-hover-dark-pct: 1%;
+$base-border-hover-dark-pct: 1%;
+$base-width: 1rem;
+$base-height: 1rem;
+$base-right: 1rem;
+$base-left: 1rem;
+$base-top: 1rem;
+$base-bottom: 1rem;
+$base-line-height: 1rem;
+$base-top-pct: 1%;
+$base-left-pct: 1%;
+$base-width-pct: 1%;
+$base-height-pct: 1%;
+$base-shadow: 1rem;
+$base-position: 1rem;
+$base-border-radius-pct: 1%;
+$base-right-pct: 1%;
+$base-margin-pct: 1%;
+$base-pct: 1%;
+$base-direction: 1rem;
+
+/**
+ * DIRECTIONS CONSTANTS VARIABLES IN STRING
+ */
+$direction-top: 'top';
+$direction-right: 'right';
+$direction-bottom: 'bottom';
+$direction-left: 'left';
+$no-direction: 'none';
+
+/**
+ * FONT STYLES VARIABLES IN STRING
+ */
+$font-style-normal: 'normal';
+$font-style-italic: 'italic';
+$font-style-oblique: 'oblique';
+$none: none;
+
+// FONT SIZES
+//TABLE FONT SIZES
+$listing-entities-header-font-size: 14px;
+$listing-entities-column-font-size: 14px;
+$listing-entities-head-col-padding: 0.5rem;
+
+// TEST CASE EDOTOR PAGE
+//COLORS
+$save-btn-bg-color: #4fc281;
+$header-border-color: #ced4da;
+$filter-background: #fafbfd;
+$filter-no-background: #dbdee2;
+$header-btn-separator: #dbe0e4;
+$editor-header-background: #fff;
+$editor-subheader-background: #fff;
+$editor-subheader-border-color:#dddfe2;
+$lock-btn-border: #eb728f;
+$grid-border-color: #c7c7c7;
+$grid-btn-border-color: #c7c7c7;
+
+// SIZES
+$sidebar_width_big: 300px;
+$sidebar_width_small: 100px;
+$sidebar-transition-delay: 0.2s;
+$registration_card_max_width: 655px;
+$signup_wizard_width: 977px;
+
+//box-shadow
+
+$box_shadow_global: 0px 2px 2px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+//Global Opacities
+$label-opacity: 0.7;
+$full-opacity: 1;

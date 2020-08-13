@@ -1,0 +1,53 @@
+.upload-box-container {
+  width: 350px;
+  .root {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px dashed #cecece;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .disable {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+  .mainTitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #7e7e7e;
+    display: block;
+    width: 100%;
+  }
+
+  .secondaryTitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #7e7e7e;
+    display: block;
+    width: 100%;
+  }
+  @media (max-width: 640px) {
+    .secondaryTitle {
+      font-size: 14px;
+      line-height: 1.45;
+    }
+  }
+  @media (max-width: 480px) {
+    .secondaryTitle {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .secondaryTitle {
+      font-size: 10.5px;
+    }
+  }
+}
